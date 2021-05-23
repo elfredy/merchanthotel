@@ -1,0 +1,107 @@
+.roomSuit {
+    &__infoText {
+        padding-top: 4.7rem;
+        padding-bottom: 11rem;
+        p {
+            @include font($gtlt, 1.6rem, $color-gray-dark);
+            line-height: 24px;
+            text-align: center;
+        }
+    }
+
+    &__left {
+        p {
+            @include font($gtlt, 1.6rem, $color-gray-dark);
+            line-height: 24px;
+            max-width: 45.7rem;
+            margin-top: 3.5rem;
+            margin-bottom: 3.8rem;
+        }
+    }
+
+    &__linkGroup {
+        a {
+            @include font($grd, 5rem, $color-gray-dark);
+            line-height: 67px;
+            transition: all 0.3s;
+
+            &:hover {
+                color: $color-primary;
+                padding-left: 2rem;
+            }
+        }
+        margin-bottom: 7.4rem;
+    }
+
+    &__title {
+        @include font($grd, 8rem, $color-gray-dark);
+        line-height: 89px;
+        margin-bottom: 4.7rem;
+    }
+
+    &__check{
+        svg{
+            margin: 0 1.2rem;
+        }
+
+
+        &--1{
+            margin-top: 3rem;
+            span{
+                &:not(:first-child){
+                    margin-left: 3rem;
+                }
+            }
+        }
+    }
+    &__booknow {
+        display: flex;
+        align-items: center;
+    
+        span{
+            @include font($gtm, 1.7rem, $color-secondary);
+            line-height: 20px;
+
+           
+        }
+
+
+
+        a{
+            @include font($gtm, 1.4rem, #fff);
+            width: 7.6rem;
+            height: 7.5rem;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            background-color: $color-secondary;
+            border-radius: 50%;
+            margin-left: 5rem;
+            
+            &:hover{
+                animation: pulse2 1.6s infinite;
+            }
+        }
+    }
+
+
+    &__right{
+        position: relative;
+        padding-top: 14rem;
+        img{
+            z-index: 2;
+        }
+    }
+
+    &__rotate{
+        position: relative;
+        left: -8.4rem;
+        top: -9.1rem;
+       svg{
+        animation: spin 6s linear infinite;
+        position: absolute;
+       }
+    }
+}
+
+

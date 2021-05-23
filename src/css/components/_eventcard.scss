@@ -1,0 +1,26 @@
+.eventCard{
+
+    display: block;
+    max-width: 72.5rem;
+    margin-top: 8rem;
+    
+    img{
+        width: 100%;
+        height: auto;
+        margin: 3.4rem 0;
+    }
+
+    p{
+        @include font($gtlt,1.6rem,$color-gray-dark);
+        line-height: 24px;
+        padding-left: 1.8rem;
+        @include respondmin(xl){
+            max-width: 65.5rem;
+        }
+    }
+
+
+    &.d-flex.flex-column-reverse{
+        margin-left: auto;
+    }
+}

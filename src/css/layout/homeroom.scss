@@ -1,0 +1,32 @@
+.homeRoom {
+    padding-top: 8.5rem;
+    @include respondmin(xl) {
+        .container {
+            max-width: 1110px !important;
+        }
+    }
+
+    &__info {
+        max-width: 79.2rem;
+        float: none;
+        margin: 0 auto;
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+
+        p {
+            @include font($gtlt, 1.6rem, $color-gray-dark);
+            line-height: 24px;
+            text-align: center;
+        }
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        width: 6.2rem;
+        height: 1.5px;
+        background-color: $color-secondary;
+    }
+
+    .owl-theme .owl-nav.disabled + .owl-dots {
+        margin-top: 3rem !important;
+    }
+}

@@ -1,0 +1,30 @@
+.corona{
+    background-color: $color-primary;
+    height: 6.6rem;
+    display: flex;
+
+    p{
+        @include font($gtlt,1.3rem,#fff);
+        line-height: 29px;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        
+
+        strong{
+            @include font($gtmdm);
+            margin: 0 1rem;
+
+        }
+        span{
+            line-height: 32px;
+        }
+    }
+
+
+    &__close{
+        display: flex;
+        align-items: center;
+    }
+    
+}

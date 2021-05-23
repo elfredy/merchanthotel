@@ -1,0 +1,38 @@
+.instagram {
+    padding-top: 8.2rem;
+
+    &__title {
+        @include font($gtmdm, 7rem, $color-primary);
+        line-height: 105px;
+    }
+
+    &__link{
+        margin-left: 4.6rem;
+    }
+
+    &__hashtag{
+        @include font($grd,5rem,$color-primary);
+        line-height: 105px;
+        transition:  all .3s;
+
+        &:hover{
+            color: $color-secondary;
+        }
+
+    }
+
+    &__top{
+        margin-bottom: 1.5rem;
+    }
+
+    
+    .owl-theme .owl-dots .owl-dot span {
+        width: 6.2rem;
+        height: 2px;
+        background-color: $color-secondary;
+    }
+
+    .owl-theme .owl-nav.disabled + .owl-dots {
+        margin-top: 3rem !important;
+    }
+}

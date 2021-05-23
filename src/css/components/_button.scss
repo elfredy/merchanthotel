@@ -1,0 +1,20 @@
+.imgLinks {
+    width: 35rem;
+    height: 8rem;
+    position: absolute;
+    bottom: 7.6rem;
+    left: -6.9rem;
+    background-color: $color-primary;
+    @include font($gtlt, 2rem, #fff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 24px;
+    transition: all 0.5s;
+    z-index: 2;
+
+    &:hover {
+        animation: pulse 1.6s infinite;
+        color: #fff;
+    }
+}

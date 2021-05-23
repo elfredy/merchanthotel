@@ -1,0 +1,42 @@
+.pageHeader {
+    position: relative !important;
+    &__top {
+        background-color: #f6f6f6 !important;
+        margin-top: 0 !important;
+    }
+
+    &__bottom {
+        height: 50rem;
+        position: relative;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            content: "";
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    &__title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include font($grd, 10rem, #f6f6f6);
+        line-height: 105px;
+        z-index: 3;
+    }
+}

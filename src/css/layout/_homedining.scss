@@ -1,0 +1,65 @@
+.homeDining{
+
+    padding-top: 8.6rem;
+
+    .container {
+        @include respondmin(xxl) {
+            max-width: 1568px !important;
+        }
+    }
+
+    &__card{
+        display: block;
+        width: 100%;
+        height: 68.3rem;
+        max-width: 72.4rem;
+        padding-top: 7.6rem;
+        padding-left: 5.3rem;
+        padding-right: 24.8rem;
+        position: relative;
+        margin-top: 9.4rem;
+
+        &--down{
+            top: 8rem;
+            margin-left: auto;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,.3);
+            z-index: 1;
+        }
+
+        
+    }
+
+    &__title{
+        @include font($grd,10rem,#f6f6f6);
+        position: relative;
+        line-height: 140px;
+        z-index: 2;
+
+    }
+
+    p{
+        @include font($gtlt,1.6rem,#f6f6f6);
+        line-height: 24px;
+        position: relative;
+        z-index: 2;
+    }
+
+}

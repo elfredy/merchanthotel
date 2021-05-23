@@ -1,0 +1,46 @@
+.diningSliderCard{
+    //position: relative;
+    display: block;
+    width: 63rem;
+    height: 63rem;
+
+    img{
+        height: 100%;
+        object-fit: cover !important;
+    }
+
+
+    &__menu{
+        position: absolute;
+        bottom: 2.6rem;
+        left: -19.3rem;
+
+        width: 10.8rem;
+        height: 10.7rem;
+        border-radius: 50%;
+        border: 1px solid $color-secondary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include font($gtlt,1.4rem,$color-secondary);
+        line-height: 22px;
+        
+
+        &:hover{
+            animation: pulse2  1.6s infinite;
+        }
+
+
+        &::after{
+            content: "";
+            width: 8.5rem;
+            height: 1px;
+            background-color: $color-secondary;
+            position: absolute;
+            right: -8.5rem;
+        }
+    }
+}
+
+
+

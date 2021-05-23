@@ -1,0 +1,91 @@
+.diningRest {
+    .container {
+        @include respondmin(xxl) {
+            max-width: 1568px !important;
+        }
+    }
+
+    h1 {
+        @include font($grd, 11.5rem, $color-primary);
+        line-height: 105px;
+        text-align: center;
+    }
+
+    p {
+        @include font($gtlt, 1.6rem, $color-gray-dark);
+        line-height: 24px;
+        max-width: 67.3rem;
+        display: flex;
+        margin-left: auto;
+        margin-top: 5.8rem;
+    }
+
+    &__left {
+        max-width: 73rem;
+        margin-top: 8rem;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__slider {
+        max-width: 73rem;
+        margin-left: auto;
+        margin-top: 15.5rem;
+    }
+
+    &__card {
+        width: 73rem;
+        height: 100rem;
+        position: relative;
+      
+        img {
+            height: 100%;
+            object-fit: cover !important;
+            height: 73rem !important;
+        }
+    }
+
+    &__menu {
+        position: absolute;
+        left: 2.6rem;
+        bottom: 6rem;
+
+        width: 10.8rem;
+        height: 10.7rem;
+        border-radius: 50%;
+        border: 1px solid $color-secondary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include font($gtlt, 1.4rem, $color-secondary);
+        line-height: 22px;
+
+        &:hover {
+            animation: pulse2 1.6s infinite;
+        }
+
+        &::after {
+            content: "";
+            height: 10.5rem;
+            width: 1px;
+            background-color: $color-secondary;
+            position: absolute;
+            top: -10.5rem;
+        }
+    }
+
+
+    .owl-theme .owl-dots .owl-dot span {
+        width: 6.2rem;
+        height: 2px;
+        background-color: $color-secondary;
+    }
+
+    .owl-theme .owl-nav.disabled + .owl-dots {
+        position: absolute;
+        width: 100%;
+        bottom: 22rem;
+    }
+}

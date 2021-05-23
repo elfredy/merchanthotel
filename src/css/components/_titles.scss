@@ -1,0 +1,4 @@
+.bigTitle{
+    @include font($grd,10rem,$color-primary);
+    line-height: 105px;
+}

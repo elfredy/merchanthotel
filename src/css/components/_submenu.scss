@@ -1,0 +1,62 @@
+.subMenu {
+    position: relative;
+
+    &__list {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 50rem;
+        padding-left: 0;
+        padding-top: 7.61rem;
+        transition: all .3s;
+    }
+
+    &__item {
+        &:not(:first-child) {
+            margin-top: 1.8rem;
+        }
+
+        transition: all .3s;
+        opacity: 0;
+        visibility: hidden;
+   
+    }
+
+    &__link {
+        @include font($gtlt, 2.2rem, #f6f6f6);
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        transition: all 0.3s;
+        span {
+            margin-left: 1rem;
+        }
+
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+
+    &:hover {
+        .subMenu__item {
+            animation-name: slideInTop;
+            animation-duration: 0.3s;
+            animation-fill-mode: backwards;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+@keyframes slideInTop {
+    from {
+        transform: translate(0, -25%);
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+        visibility: visible;
+    }
+}

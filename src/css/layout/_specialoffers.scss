@@ -1,0 +1,11 @@
+.specialOffers{
+
+    .container {
+        @include respondmin(xxl) {
+            max-width: 1568px !important;
+        }
+    }
+
+    padding-bottom: 12.8rem;
+}
+

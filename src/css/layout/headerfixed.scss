@@ -1,0 +1,21 @@
+.headerFixed{
+    background-color: #f6f6f6;
+    height: 11.6rem;
+    position: fixed;
+    top: -11.6rem;
+    width: 100%;
+    transition: all .3s;
+    z-index: 5;
+
+    &__title{
+        @include font($grd,7rem,$color-primary);
+        transition: all .3s;
+        &:hover{
+            color: $color-secondary;
+        }
+    }
+
+    &__language{
+        color: $color-primary !important;
+    }
+}

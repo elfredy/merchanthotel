@@ -1,0 +1,26 @@
+.homeGuest{
+    padding-top: 11.2rem;
+
+    .container--2 {
+        @include respondmin(xxl) {
+            max-width: 1568px !important;
+        }
+    }
+
+    &__slider{
+        margin-top: 7.5rem;
+    }
+
+
+    
+    .owl-theme .owl-dots .owl-dot span {
+        width: 6.2rem;
+        height: 2px;
+        background-color: $color-secondary;
+    }
+
+    .owl-theme .owl-nav.disabled + .owl-dots {
+        margin-top: 3rem !important;
+    }
+
+}

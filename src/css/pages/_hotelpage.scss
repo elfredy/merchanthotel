@@ -1,0 +1,118 @@
+.hotelPage {
+    &__top {
+        h1 {
+            @include font($grd, 11.5rem, $color-primary);
+            line-height: 105px;
+        }
+        h6 {
+            @include font($gtm, 4rem, $color-primary);
+            line-height: 48px;
+        }
+        p {
+            @include font($gtlt, 1.6rem, $color-primary);
+            line-height: 24px;
+            max-width: 55.2rem;
+        }
+    }
+
+    &__bottom {
+        margin-top: 5rem;
+    }
+
+    &__info {
+        h3 {
+            @include font($grd, 5rem, $color-primary);
+            line-height: 105px;
+        }
+
+        p {
+            @include font($gtlt, 1.6rem, $color-primary);
+            line-height: 24px;
+            max-width: 45.4rem;
+            &:not(:last-child) {
+                max-width: 24.7rem !important;
+            }
+        }
+    }
+
+    &__card {
+        img {
+            height: 63rem !important;
+            object-fit: cover !important;
+        }
+    }
+
+    &__right {
+        position: relative;
+        width: 63rem;
+        margin-left: auto;
+
+        .imgLinks {
+            bottom: 15.6rem !important;
+            left: 44.1rem !important;
+            z-index: 2;
+        }
+
+        .hotelPage__info{
+            padding-left: 6rem;
+        }
+    }
+
+   
+
+    &__menu {
+        position: absolute;
+        bottom: 2.6rem;
+        left: -19.3rem;
+
+        width: 10.8rem;
+        height: 10.7rem;
+        border-radius: 50%;
+        border: 1px solid $color-secondary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include font($gtlt, 1.4rem, $color-secondary);
+        line-height: 22px;
+
+        &:hover {
+            animation: pulse2 1.6s infinite;
+        }
+
+        &::after {
+            content: "";
+            width: 8.5rem;
+            height: 1px;
+            background-color: $color-secondary;
+            position: absolute;
+            right: -8.5rem;
+        }
+    }
+
+    &__left{
+        position: relative;
+      
+        .hotelPage__menu{
+            right: -19.3rem !important;
+            left: auto !important;
+
+            &::after{
+                left: -8.5rem !important;
+                right: auto;
+            }
+        }
+
+        
+    }
+
+
+    .owl-theme .owl-dots .owl-dot span {
+        width: 6.2rem;
+        height: 2px;
+        background-color: $color-secondary;
+    }
+
+    .owl-theme .owl-nav.disabled + .owl-dots {
+        margin-top: 3rem !important;
+    }
+}

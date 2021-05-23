@@ -1,0 +1,85 @@
+.diningBar {
+    position: relative;
+    padding-top: 11rem;
+    max-height: 174rem;
+    .container {
+        @include respondmin(xxl) {
+            max-width: 1568px !important;
+        }
+    }
+
+    img {
+        max-width: 1408rem;
+        height: 72.8rem;
+        position: relative;
+        margin-left: auto;
+        display: flex;
+        margin-top: 7rem;
+    }
+
+    h1 {
+        @include font($grd, 11.5rem, $color-primary);
+        line-height: 105px;
+    }
+
+    &__infocard {
+        width: 64rem;
+        background-color: $color-primary;
+        padding: 6rem 4.1rem 10.7rem 5.7rem;
+        top: -26rem;
+        position: relative;
+        h4 {
+            @include font($grd, 5rem, #f6f6f6);
+            line-height: 105px;
+        }
+
+        p {
+            @include font($gtlt, 1.6rem, #f6f6f6);
+            line-height: 24px;
+        }
+    }
+
+    &__menu{
+        position: absolute;
+        bottom: 2.6rem;
+        right: -21.3rem;
+
+        width: 10.8rem;
+        height: 10.7rem;
+        border-radius: 50%;
+        border: 1px solid $color-secondary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include font($gtlt,1.4rem,$color-secondary);
+        line-height: 22px;
+        
+
+        &:hover{
+            animation: pulse2  1.6s infinite;
+        }
+
+
+        &::after{
+            content: "";
+            width: 10.5rem;
+            height: 1px;
+            background-color: $color-secondary;
+            position: absolute;
+            left: -10.5rem;
+        }
+    }
+
+    &__text{
+        max-width: 76.8rem;
+        position: relative;
+        display: flex;
+        margin-left: auto;
+        top: -74rem;
+        
+        p {
+            @include font($gtlt, 1.6rem, $color-gray-dark);
+            line-height: 24px;
+        }
+    }
+}

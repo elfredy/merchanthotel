@@ -1,0 +1,15 @@
+.mynav {
+    .nav-link {
+        @include font($grd, 5.5rem, #f6f6f6);
+        line-height: 78px;
+    }
+
+    .nav-item{
+        &:not(:first-child){
+            margin-left: 8rem;
+        }
+    }
+
+
+
+}

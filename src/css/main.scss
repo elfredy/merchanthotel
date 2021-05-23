@@ -1,0 +1,50 @@
+@import "abstracts/bt5start";
+  
+@import "abstracts/function";
+@import "abstracts/mixin";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+@import "base/fonts";
+
+@import "components/button"; 
+@import "components/perload"; 
+@import "components/menu"; 
+@import "components/submenu"; 
+@import "components/titles"; 
+@import "components/homeroomcard"; 
+@import "components/eventcard"; 
+@import "components/homeimg"; 
+@import "components/diningslidercard"; 
+@import "components/specialoffercard"; 
+
+@import "layout/footer";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/corona";
+@import "layout/headertop";
+@import "layout/homeheader";
+@import "layout/headerfixed";
+@import "layout/roomsuit";
+@import "layout/homeroom";
+@import "layout/homedining";
+@import "layout/homebar";
+@import "layout/homeguest";
+@import "layout/instagram";
+@import "layout/homecity";
+@import "layout/pageheader";
+@import "layout/specialoffers";
+
+@import "pages/contact";
+@import "pages/diningterrace";
+@import "pages/diningbar";
+@import "pages/diningrest";
+@import "pages/diningimg";
+@import "pages/hotelpage";
+
+
+
+@import "abstracts/bt5end";
+    

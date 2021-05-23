@@ -1,0 +1,10 @@
+.homeCity{
+    padding-top: 8.8rem;
+
+
+    .container--2 {
+        @include respondmin(xxl) {
+            max-width: 1568px !important;
+        }
+    }
+}
